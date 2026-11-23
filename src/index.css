@@ -1,0 +1,6 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+:root { --bg: 250 248 255; --card: 255 255 255; --fg: 27 21 48; --muted: 110 102 140; --accent: 124 58 237; }
+.dark { --bg: 15 11 30; --card: 27 21 48; --fg: 238 234 255; --muted: 160 152 190; --accent: 167 139 250; }
+body { @apply bg-bg text-fg antialiased transition-colors duration-300; }
+.card { @apply bg-card rounded-2xl shadow-lg shadow-black/5 transition-transform duration-300 hover:-translate-y-1; }
+.btn { @apply inline-flex items-center gap-2 rounded-xl bg-accent px-4 py-2 font-medium text-white transition hover:opacity-90 active:scale-95; }
